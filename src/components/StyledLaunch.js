@@ -1,20 +1,35 @@
 import styled from "styled-components";
 
-//Styling for EditPosts.js
-export const Card = styled.div`
+//Styling for Laucnhes
+
+export const DisplayDiv = styled.div`
+  width: 100%;  
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-left: 17em;
-  margin-right: 17em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding: 0.5em;
+  height: auto;
+`;
+
+export const Card = styled.div`
+  width: 40%;  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding: 2.5%;
   background-color: #0E3350;
   height: auto;
   color: #21B8E5
   border-radius: 0.25em;
   border: 0.15em solid rgba(10, 162, 100, 0.4);
+  @media (max-width: 800px) {
+    width: 80%;
+  }
 `;
 export const P = styled.div`
     color: white;

@@ -3,7 +3,7 @@ import Launch from './Launch.js'
 import {connect} from 'react-redux';
 import { getData, getPastData } from '../store/actions';
 import Loader from 'react-loader-spinner';
-import { Button } from './StyledLaunch';
+import { Button, DisplayDiv } from './StyledLaunch';
 
 const Launches = props => {
     return(
@@ -23,11 +23,13 @@ const Launches = props => {
                 'See Upcoming Launches'
                 )}
             </Button>
-            {props.launches.map(launch => {
-                    return(
-                        <Launch key={launch.mission_name} launch={launch} />
-                    )
-            })}
+            <DisplayDiv>
+                {props.launches.map(launch => {
+                        return(
+                            <Launch key={launch.mission_name} launch={launch} />
+                        )
+                })}
+            </DisplayDiv>
         </>
     )
 }
