@@ -3,13 +3,13 @@ import styled from "styled-components";
 //Styling for Laucnhes
 
 export const DisplayDiv = styled.div`
-  width: 100%;  
+  width: 98%;  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  padding: 0.5em;
+  padding: 1%;
   height: auto;
 `;
 
